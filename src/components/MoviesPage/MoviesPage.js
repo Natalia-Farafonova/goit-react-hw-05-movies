@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { getMoviesQuery } from '../Api/Api';
 import { useHistory, useLocation, Link } from 'react-router-dom';
 
-// import s from 'components/Navigation/MoviesPage.module.css';
-
 const MoviesPage = () => {
   const [findFilm, setFindFilm] = useState(null);
   const [films, setFilms] = useState(null);

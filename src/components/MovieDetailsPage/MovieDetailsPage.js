@@ -11,26 +11,20 @@ import { useState, useEffect, useRef } from 'react';
 import Reviews from '../Reviews/Reviews';
 import Cast from '../Cast/Cast';
 
-// import s from 'components/Navigation/MoviesPage.module.css';
-
 const MovieDetailsPage = () => {
   const match = useRouteMatch();
-  // console.log(match.url);
 
   const [moviesIdInfo, setMoviesIdInfo] = useState(null);
   const [moviesIdReview, setMoviesIdReview] = useState(null);
   const [moviesIdCast, setMoviesIdCast] = useState(null);
 
   const { moviesId } = useParams();
-  // console.log('moviesId',moviesId);
 
   const routerState = useRef(null);
-  // console.log(routerState.current);
 
   const history = useHistory();
-  // console.log('history', history);
+
   const location = useLocation();
-  // console.log('location', location.state);
 
   useEffect(() => {
     if (!routerState.current) {

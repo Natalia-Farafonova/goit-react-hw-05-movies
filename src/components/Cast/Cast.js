@@ -1,4 +1,3 @@
-// import s from 'components/Navigation/MoviesPage.module.css';
 import PropTypes from 'prop-types';
 
 const Cast = ({ moviesIdCast }) => {

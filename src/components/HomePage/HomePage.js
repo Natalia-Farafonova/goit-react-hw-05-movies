@@ -2,8 +2,6 @@ import { getMovies } from '../Api/Api';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-// import s from 'components/Navigation/HomePage.module.css';
-
 const HomePage = () => {
   // const match = useRouteMatch();
   const [movies, setMovies] = useState(null);
@@ -17,7 +15,7 @@ const HomePage = () => {
 
   return (
     <>
-      <h2>HomePage</h2>
+      <h2>Treading today</h2>
       {movies &&
         movies.map(movie => (
           <li key={movie.id}>
